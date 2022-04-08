@@ -9,26 +9,20 @@ import SwiftUI
 
 struct StopWatchView: View {
     
-    @State private var progressTime = 236
-    
-    var minutes: Int {
-        (progressTime % 3600) / 60
-    }
-    
-    var seconds: Int {
-        progressTime % 60
-    }
-    
-    var timer: Timer {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            progressTime += 1
-        }
-    }
+    @ObservedObject var stopWatchManager = StopWatchManager()
     
     var body: some View {
-        Text("\(minutes):\(seconds)")
-            .padding()
-            .onAppear(perform: {_ = timer})
+        VStack {
+            Text(String(format: "%.1f", stopWatchManager.secondsPassed))
+                .font(.system(size: 40))
+                .padding()
+            Button {
+                self.stopWatchManager.start()
+            } label: {
+                Text("Start")
+                    .font(.system(size: 40))
+            }
+        }
     }
 }
 

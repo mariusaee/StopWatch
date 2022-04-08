@@ -13,6 +13,8 @@
 		2903427528004F690034B4E8 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2903426328004F660034B4E8 /* StopWatchView.swift */; };
 		2903427628004F690034B4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2903426428004F690034B4E8 /* Assets.xcassets */; };
 		2903427728004F690034B4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2903426428004F690034B4E8 /* Assets.xcassets */; };
+		29034281280062490034B4E8 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034280280062490034B4E8 /* StopWatchManager.swift */; };
+		29034282280062490034B4E8 /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29034280280062490034B4E8 /* StopWatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		2903426928004F690034B4E8 /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2903426F28004F690034B4E8 /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2903427128004F690034B4E8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		29034280280062490034B4E8 /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			children = (
 				2903426228004F660034B4E8 /* StopWatchApp.swift */,
 				2903426328004F660034B4E8 /* StopWatchView.swift */,
+				29034280280062490034B4E8 /* StopWatchManager.swift */,
 				2903426428004F690034B4E8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -177,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2903427428004F690034B4E8 /* StopWatchView.swift in Sources */,
+				29034281280062490034B4E8 /* StopWatchManager.swift in Sources */,
 				2903427228004F690034B4E8 /* StopWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2903427528004F690034B4E8 /* StopWatchView.swift in Sources */,
+				29034282280062490034B4E8 /* StopWatchManager.swift in Sources */,
 				2903427328004F690034B4E8 /* StopWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
